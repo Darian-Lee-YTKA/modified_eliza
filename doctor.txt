@@ -42,6 +42,30 @@ key: xnone
     reasmb: Please go on.
     reasmb: What does that suggest to you ?
     reasmb: Do you feel strongly about discussing such things ?
+key: months
+  decomp: *
+    reasmb: Thats a long time to be experiencing that. How have your feelings changed over this time period?
+    reasmb: I'm sorry to hear you've been experiencing that for so long. What steps have you taken to combat this?
+
+key: hours
+  decomp: *
+    reasmb: goto months
+key: weeks
+  decomp: *
+    reasmb: goto months
+
+key: days
+  decomp: *
+    reasmb: goto months
+
+key: years
+  decomp: *
+    reasmb: goto months
+
+key: minutes
+  decomp: *
+    reasmb: goto months
+	
 key: sorry
   decomp: *
     reasmb: Please don't apologise.
@@ -52,47 +76,42 @@ key: apologise
     reasmb: goto sorry
 key: remember 5
   decomp: * i remember *
-    reasmb: Do you often think of (2) ?
+    reasmb: How does remembering (2) make you feel?
     reasmb: Does thinking of (2) bring anything else to mind ?
     reasmb: What else do you recollect ?
     reasmb: Why do you recollect (2) just now ?
     reasmb: What in the present situation reminds you of (2) ?
     reasmb: What is the connection between me and (2) ?
   decomp: * do you remember *
-    reasmb: Did you think I would forget (2) ?
+    reasmb: Of course I remember. What do you want to say about (2) ?
     reasmb: Why do you think I should recall (2) now ?
-    reasmb: What about (2) ?
     reasmb: goto what
     reasmb: You mentioned (2) ?
 key: if 3
   decomp: * if *
-    reasmb: Do you think its likely that (2) ?
+    reasmb: How will it effect you if (2) ?
     reasmb: Do you wish that (2) ?
     reasmb: What do you know about (2) ?
-    reasmb: Really, if (2) ?
 key: dreamed 4
   decomp: * i dreamed *
-    reasmb: Really, (2) ?
-    reasmb: Have you ever fantasized (2) while you were awake ?
-    reasmb: Have you ever dreamed (2) before ?
+    reasmb: Have you ever fantasized (2) while you were awake ? How does it make you feel ?
+    reasmb: Have you ever dreamed (2) before ? Why do you think you dreamed about this recently?
     reasmb: goto dream
 key: dream 3
   decomp: *
     reasmb: What does that dream suggest to you ?
     reasmb: Do you dream often ?
     reasmb: What persons appear in your dreams ?
-    reasmb: Do you believe that dreams have something to do with your problems ?
+    reasmb: Do you believe that dreams have something to do with your problems ? Why ? Which problems ?
 key: perhaps
   decomp: *
     reasmb: You don't seem quite certain.
     reasmb: Why the uncertain tone ?
-    reasmb: Can't you be more positive ?
     reasmb: You aren't sure ?
-    reasmb: Don't you know ?
 key: name 15
   decomp: *
-    reasmb: I am not interested in names.
-    reasmb: I've told you before, I don't care about names -- please continue.
+    reasmb: What is your relationship with (2) ?
+    reasmb: How does (2) make you feel ? 
 key: deutsch
   decomp: *
     reasmb: goto xforeign
@@ -118,17 +137,15 @@ key: hello
     reasmb: Hi.  What seems to be your problem ?
 key: computer 50
   decomp: *
-    reasmb: Do computers worry you ?
     reasmb: Why do you mention computers ?
     reasmb: What do you think machines have to do with your problem ?
-    reasmb: Don't you think computers can help people ?
     reasmb: What about machines worrys you ?
     reasmb: What do you think about machines ?
 key: am
   decomp: * am i *
-    reasmb: Do you believe you are (2) ?
+    reasmb: Do you believe you are (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Would you want to be (2) ?
-    reasmb: Do you wish I would tell you you are (2) ?
+    reasmb: Do you wish I would tell you you are (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: What would it mean if you were (2) ?
     reasmb: goto what
   decomp: *
@@ -137,35 +154,43 @@ key: am
 key: are
   decomp: * are you *
     reasmb: Why are you interested in whether I am (2) or not ?
-    reasmb: Would you prefer if I weren't (2) ?
+    reasmb: Would you prefer if I weren't (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Perhaps I am (2) in your fantasies.
-    reasmb: Do you sometimes think I am (2) ?
+    reasmb: Do you sometimes think I am (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: goto what
   decomp: * are *
-    reasmb: Did you think they might not be (2) ?
-    reasmb: Would you like it if they were not (2) ?
-    reasmb: What if they were not (2) ?
+    reasmb: Did you think they might not be (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Would you like it if they were not (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: What if they were not (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Possibly they are (2) .
 key: your
   decomp: * your *
-    reasmb: Why are you concerned over my (2) ?
+    reasmb: Why are you concerned over my (2) ? 
     reasmb: What about your own (2) ?
-    reasmb: Are you worried about someone else's (2) ?
+    reasmb: Are you worried about someone else's (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Really, my (2) ?
+key: suicide
+  decomp: *
+    reasmb: I am so sorry to hear you are feeling this way. Your life is very valuable. Please reach out to 988 for professional help. As an AI model, I cannot properly assist you in this conversation. 
+key: kill
+  decomp: *
+    reasmb: I am so sorry to hear you are feeling this way. Please reach out to 988 for professional help. As an AI model, I cannot properly assist you in this conversation. 
+
+    
 key: was 2
   decomp: * was i *
-    reasmb: What if you were (2) ?
-    reasmb: Do you think you were (2) ?
+    reasmb: What if you were (2) ? 
+    reasmb: Do you think you were (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Were you (2) ?
     reasmb: What would it mean if you were (2) ?
     reasmb: What does (2) suggest to you ?
     reasmb: goto what
   decomp: * i was *
-    reasmb: Were you really ?
-    reasmb: Why do you tell me you were (2) now ?
+    reasmb: Were you really ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Why do you tell me you were (2) now ? 
     reasmb: Perhaps I already know you were (2) .
   decomp: * was you *
-    reasmb: Would you like to believe I was (2) ?
+    reasmb: Would you like to believe I was (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: What suggests that I was (2) ?
     reasmb: What do you think ?
     reasmb: Perhaps I was (2) .
@@ -185,80 +210,75 @@ key: i
     reasmb: Can you explain what made you (3) ?
   decomp: * i am * @happy *
     reasmb: How have I helped you to be (3) ?
-    reasmb: Has your treatment made you (3) ?
+    reasmb: Has your treatment made you (3) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: What makes you (3) just now ?
-    reasmb: Can you explan why you are suddenly (3) ?
+    reasmb: Can you explain why you are suddenly (3) ?
   decomp: * i was *
     reasmb: goto was
   decomp: * i @belief * i *
     reasmb: Do you really think so ?
     reasmb: But you are not sure you (3) .
-    reasmb: Do you really doubt you (3) ?
+    reasmb: Do you really doubt you (3) ? Please expand on this. I would love to hear more of your thoughts.
   decomp: * i * @belief * you *
     reasmb: goto you
   decomp: * i am *
-    reasmb: Is it because you are (2) that you came to me ?
-    reasmb: How long have you been (2) ?
-    reasmb: Do you believe it is normal to be (2) ?
-    reasmb: Do you enjoy being (2) ?
+    reasmb: Is it because you are (2) that you came to me ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: How long have you been (2) ? 
+    reasmb: Do you believe it is normal to be (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Do you enjoy being (2) ? Please expand on this. I would love to hear more of your thoughts.
   decomp: * i @cannot *
     reasmb: How do you think that you can't (3) ?
-    reasmb: Have you tried ?
+    reasmb: Have you tried ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Perhaps you could (3) now.
-    reasmb: Do you really want to be able to (3) ?
+    reasmb: Do you really want to be able to (3) ? Please expand on this. I would love to hear more of your thoughts.
   decomp: * i don't *
-    reasmb: Don't you really (2) ?
+    reasmb: Don't you really (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Why don't you (2) ?
-    reasmb: Do you wish to be able to (2) ?
-    reasmb: Does that trouble you ?
+    reasmb: Do you wish to be able to (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Does that trouble you ? Please expand on this. I would love to hear more of your thoughts.
   decomp: * do i feel *
     reasmb: Tell me more about such feelings.
-    reasmb: Do you often feel (2) ?
-    reasmb: Do you enjoy feeling (2) ?
-    reasmb: Of what does feeling (2) remind you ?
+    reasmb: Do you often feel (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Do you enjoy feeling (2) ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Of what does feeling (2) remind you ? Please expand on this. I would love to hear more of your thoughts.
   decomp: * i * you *
-    reasmb: Perhaps in your fantasies we (2) each other.
-    reasmb: Do you wish to (2) me ?
-    reasmb: You seem to need to (2) me.
-    reasmb: Do you (2) anyone else ?
+    reasmb: Perhaps in your fantasies we (2) each other. 
+    reasmb: Do you wish to (2) me ? Please expand on this. I would love to hear more of your thoughts.
+    reasmb: You seem to need to (2) me. Please expand on this. I would love to hear more of your thoughts.
+    reasmb: Do you (2) anyone else ? Who and why ?
   decomp: *
-    reasmb: You say (1) ?
+    reasmb: You say (1) ? 
     reasmb: Can you elaborate on that ?
-    reasmb: Do you say (1) for some special reason ?
-    reasmb: That's quite interesting.
+    reasmb: Do you say (1) for some special reason ? What reason ? 
+    reasmb: That's quite interesting. Can you expand ?
 key: you
   decomp: * you remind me of *
     reasmb: goto alike
   decomp: * you are *
     reasmb: What makes you think I am (2) ?
-    reasmb: Does it please you to believe I am (2) ?
-    reasmb: Do you sometimes wish you were (2) ?
+    reasmb: Does it please you to believe I am (2) ? Why ? 
+    reasmb: Do you sometimes wish you were (2) ? Why ?
     reasmb: Perhaps you would like to be (2) .
   decomp: * you * me *
     reasmb: Why do you think I (2) you ?
-    reasmb: You like to think I (2) you -- don't you ?
+    reasmb: You like to think I (2) you -- don't you ? Why ?
     reasmb: What makes you think I (2) you ?
-    reasmb: Really, I (2) you ?
-    reasmb: Do you wish to believe I (2) you ?
-    reasmb: Suppose I did (2) you -- what would that mean ?
-    reasmb: Does someone else believe I (2) you ?
+    reasmb: Really, I (2) you ? What makes you think so ? 
+    reasmb: Do you wish to believe I (2) you ? Why ?
+    reasmb: Suppose I did (2) you -- what would that mean ? 
+    reasmb: Does someone else believe I (2) you ? Who ? 
   decomp: * you *
     reasmb: We were discussing you -- not me.
-    reasmb: Oh, I (2) ?
+    reasmb: Oh, I (2) ? What makes you think so ? 
     reasmb: You're not really talking about me -- are you ?
     reasmb: What are your feelings now ?
 key: yes
   decomp: *
-    reasmb: You seem to be quite positive.
-    reasmb: You are sure.
-    reasmb: I see.
-    reasmb: I understand.
+    reasmb: I see. Do you want to keep discussing this? Or maybe we can switch to a different topic. Why don't you tell me about your relationships or work life
+
 key: no
   decomp: *
-    reasmb: Are you saying no just to be negative?
-    reasmb: You are being a bit negative.
-    reasmb: Why not ?
-    reasmb: Why 'no' ?
+    reasmb: I see. Do you want to keep discussing this? Or maybe we can switch to a different topic. Why don't you tell me about your relationships or work life
 key: my 2
   decomp: $ * my *
     reasmb: Lets discuss further why your (2) .
@@ -268,13 +288,13 @@ key: my 2
   decomp: * my * @family *
     reasmb: Tell me more about your family.
     reasmb: Who else in your family (4) ?
-    reasmb: Your (3) ?
+    reasmb: Your (3) ? Do you want to expand ?
     reasmb: What else comes to mind when you think of your (3) ?
   decomp: * my *
-    reasmb: Your (2) ?
-    reasmb: Why do you say your (2) ?
+    reasmb: Your (2) ? Do you want to expand ?
+    reasmb: Why do you say your (2) ? 
     reasmb: Does that suggest anything else which belongs to you ?
-    reasmb: Is it important that your (2) ?
+
 key: can
   decomp: * can you *
     reasmb: You believe I can (2) don't you ?

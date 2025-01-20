@@ -66,7 +66,7 @@ key: minutes
   decomp: *
     reasmb: goto months
 	
-key: sorry
+key: sorry 1
   decomp: *
     reasmb: Please don't apologise.
     reasmb: Apologies are not necessary.
@@ -100,38 +100,35 @@ key: dreamed 4
 key: dream 3
   decomp: *
     reasmb: What does that dream suggest to you ?
-    reasmb: Do you dream often ?
+    reasmb: Do you dream often ? Please expand on this. I would love to hear more of your thoughts. 
     reasmb: What persons appear in your dreams ?
     reasmb: Do you believe that dreams have something to do with your problems ? Why ? Which problems ?
-key: perhaps
+key: perhaps 2
   decomp: *
     reasmb: You don't seem quite certain.
     reasmb: Why the uncertain tone ?
     reasmb: You aren't sure ?
-key: name 15
-  decomp: *
-    reasmb: What is your relationship with (2) ?
-    reasmb: How does (2) make you feel ? 
-key: deutsch
+
+key: deutsch 2
   decomp: *
     reasmb: goto xforeign
     reasmb: I told you before, I don't understand German.
-key: francais
+key: francais 2
   decomp: *
     reasmb: goto xforeign
     reasmb: I told you before, I don't understand French.
-key: italiano
+key: italiano 2
   decomp: *
     reasmb: goto xforeign
     reasmb: I told you before, I don't understand Italian.
-key: espanol
+key: espanol 2
   decomp: *
     reasmb: goto xforeign
     reasmb: I told you before, I don't understand Spanish.
 key: xforeign
   decomp: *
     reasmb: I speak only English.
-key: hello
+key: hello 2
   decomp: *
     reasmb: How do you do.  Please state your problem.
     reasmb: Hi.  What seems to be your problem ?
@@ -142,7 +139,7 @@ key: computer 50
     reasmb: What about machines worrys you ?
     reasmb: What do you think about machines ?
 key: am
-  decomp: * am i *
+  decomp: * am i *2
     reasmb: Do you believe you are (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Would you want to be (2) ?
     reasmb: Do you wish I would tell you you are (2) ? Please expand on this. I would love to hear more of your thoughts.
@@ -151,7 +148,7 @@ key: am
   decomp: *
     reasmb: Why do you say 'am' ?
     reasmb: I don't understand that.
-key: are
+key: are 2
   decomp: * are you *
     reasmb: Why are you interested in whether I am (2) or not ?
     reasmb: Would you prefer if I weren't (2) ? Please expand on this. I would love to hear more of your thoughts.
@@ -163,16 +160,16 @@ key: are
     reasmb: Would you like it if they were not (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: What if they were not (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Possibly they are (2) .
-key: your
+key: your 2
   decomp: * your *
     reasmb: Why are you concerned over my (2) ? 
     reasmb: What about your own (2) ?
     reasmb: Are you worried about someone else's (2) ? Please expand on this. I would love to hear more of your thoughts.
     reasmb: Really, my (2) ?
-key: suicide
+key: suicide 100
   decomp: *
     reasmb: I am so sorry to hear you are feeling this way. Your life is very valuable. Please reach out to 988 for professional help. As an AI model, I cannot properly assist you in this conversation. 
-key: kill
+key: kill 100
   decomp: *
     reasmb: I am so sorry to hear you are feeling this way. Please reach out to 988 for professional help. As an AI model, I cannot properly assist you in this conversation. 
 
@@ -195,7 +192,7 @@ key: was 2
     reasmb: What do you think ?
     reasmb: Perhaps I was (2) .
     reasmb: What if I had been (2) ?
-key: i
+key: i 2
   decomp: * i @desire *
     reasmb: What would it mean to you if you got (3) ?
     reasmb: Why do you want (3) ?
@@ -251,7 +248,7 @@ key: i
     reasmb: Can you elaborate on that ?
     reasmb: Do you say (1) for some special reason ? What reason ? 
     reasmb: That's quite interesting. Can you expand ?
-key: you
+key: you 2
   decomp: * you remind me of *
     reasmb: goto alike
   decomp: * you are *
@@ -272,13 +269,13 @@ key: you
     reasmb: Oh, I (2) ? What makes you think so ? 
     reasmb: You're not really talking about me -- are you ?
     reasmb: What are your feelings now ?
-key: yes
+key: yes 1
   decomp: *
-    reasmb: I see. Do you want to keep discussing this? Or maybe we can switch to a different topic. Why don't you tell me about your relationships or work life
+    reasmb: I see. And how does that make you feel ? 
 
-key: no
+key: no 1
   decomp: *
-    reasmb: I see. Do you want to keep discussing this? Or maybe we can switch to a different topic. Why don't you tell me about your relationships or work life
+    reasmb: I see. And how does that make you feel ? 
 key: my 2
   decomp: $ * my *
     reasmb: Lets discuss further why your (2) .
@@ -295,7 +292,7 @@ key: my 2
     reasmb: Why do you say your (2) ? 
     reasmb: Does that suggest anything else which belongs to you ?
 
-key: can
+key: can 2
   decomp: * can you *
     reasmb: You believe I can (2) don't you ?
     reasmb: goto what
@@ -306,7 +303,7 @@ key: can
     reasmb: Do you want to be able to (2) ?
     reasmb: Perhaps you don't want to (2) .
     reasmb: goto what
-key: what
+key: what 2
   decomp: *
     reasmb: Why do you ask ?
     reasmb: Does that question interest you ?
@@ -317,13 +314,13 @@ key: what
     reasmb: What comes to mind when you ask that ?
     reasmb: Have you asked such questions before ?
     reasmb: Have you asked anyone else ?
-key: because
+key: because 2
   decomp: *
-    reasmb: Is that the real reason ?
-    reasmb: Don't any other reasons come to mind ?
-    reasmb: Does that reason seem to explain anything else ?
+
+    reasmb: Do any other reasons come to mind ? Which ones ? 
+    reasmb: Does that reason seem to explain anything else ? What ?
     reasmb: What other reasons might there be ?
-key: why
+key: why 2
   decomp: * why don't you *
     reasmb: Do you believe I don't (2) ?
     reasmb: Perhaps I will (2) in good time.
@@ -341,13 +338,13 @@ key: why
 key: everyone 2
   decomp: * @everyone *
     reasmb: Realy, (2) ?
-    reasmb: Surely not (2) .
+
     reasmb: Can you think of anyone in particular ?
     reasmb: Who, for example?
-    reasmb: Are you thinking of a very special person ?
+    reasmb: Are you thinking of a very special person ? Who ?
     reasmb: Who, may I ask ?
     reasmb: Someone special perhaps ?
-    reasmb: You have a particular person in mind, don't you ?
+    reasmb: You have a particular person in mind, don't you ? Who ?
     reasmb: Who do you think you're talking about ?
 key: everybody 2
   decomp: *

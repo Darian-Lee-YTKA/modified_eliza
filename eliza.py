@@ -172,26 +172,28 @@ class Eliza:
         if text.lower() in self.quits:
             return None
 
-        text = re.sub(r'\s*\.+\s*', ' ', text)
-        text = re.sub(r'\s*,+\s*', ' ', text)
-        text = re.sub(r'\s*;+\s*', ' ', text)
+        text = re.sub(r'\s*\.+\s*', ' . ', text)
+        text = re.sub(r'\s*,+\s*', ' , ', text)
+        text = re.sub(r'\s*;+\s*', ' ; ', text)
 
-        text = re.sub(r'^(Yes|No|Yeah|Exactly)[.,]?\s+(?=\S)', '', text, flags=re.IGNORECASE)
-        # added line. Ensures that Eliza responses
-        # to the more important part of the input (not just the yes/no part)
+
         
 
         
         log.debug('After punctuation cleanup: %s', text)
 
         words = [w for w in text.split(' ') if w]
+
         
         log.debug('Input: %s', words)
 
         words = self._sub(words, self.pres)
+
         log.debug('After pre-substitution: %s', words)
 
         keys = [self.keys[w.lower()] for w in words if w.lower() in self.keys]
+
+
         keys = sorted(keys, key=lambda k: -k.weight)
         log.debug('Sorted keys: %s', [(k.word, k.weight) for k in keys])
 
@@ -238,6 +240,8 @@ def main():
     eliza = Eliza()
     eliza.load('doctor.txt')
     eliza.run()
+    
+
 
 if __name__ == '__main__':
     logging.basicConfig()
